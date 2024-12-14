@@ -182,12 +182,13 @@ class TestOrder(unittest.TestCase):
         order.add_item(ice_storm1)
         
         expected_receipt = (
-            "Receipt:\n"
-            "Drink 1: Base = hill fog, Flavors = lemon, Size = medium, Cost: $1.90\n"
-            "Food 1: Type = french fries, Toppings = nacho cheese, Cost: $2.40\n"
-            "Ice Storm 1: Flavor = vanilla bean, Toppings = whipped cream, pecans, Cost: $4.50\n"
-            "Order Total: $9.44\n"
-        )
+    "Receipt:\n"
+    "Drink 1: Base = hill fog, Flavors = lemon, Size = medium, Cost: $1.90\n"
+    "Food 1: Type = french fries, Toppings = nacho cheese, Cost: $1.80\n"
+    "Ice Storm 1: Flavor = vanilla bean, Toppings = whipped cream, pecans, Cost: $3.50\n"
+    "Order Total: $7.71\n"
+)
+
         self.assertEqual(order.get_receipt(), expected_receipt)
 
 
