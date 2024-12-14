@@ -181,7 +181,7 @@ class TestOrder(unittest.TestCase):
         order.add_item(food1)
         order.add_item(ice_storm1)
         
-        expected_receipt = (
+ expected_receipt = (
     "Receipt:\n"
     "Drink 1: Base = hill fog, Flavors = lemon, Size = medium, Cost: $1.90\n"
     "Food 1: Type = french fries, Toppings = nacho cheese, Cost: $1.80\n"
